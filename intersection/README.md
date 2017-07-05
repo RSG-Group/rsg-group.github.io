@@ -1,5 +1,24 @@
 
 # Simple mini library for finding line and line segment intersection
+## How to use?
+* With Node
+```
+npm install line-intersection --save
+```
+In your js file:
+```
+var $ = require('line-intersection');
+```
+If you use es6:
+```
+import * as $ from 'line-intersection';
+```
+> With `es6` you can import one or more of the functions directly - `import { fun, fun2 } from 'line-intersection'`
+
+And use the functions: `$.function(params)`
+
+> If you want you can replace `$` with any var name
+
 ## Functions:
 * *findIntersection* <br/>
 This function finds the intersection of two lines. </br>
