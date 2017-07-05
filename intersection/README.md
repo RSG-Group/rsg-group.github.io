@@ -9,15 +9,20 @@ In your js file:
 ```
 var $ = require('line-intersection');
 ```
-If you use es6:
-```
-import * as $ from 'line-intersection';
-```
+If you use es6: `import * as $ from 'line-intersection'`
+
 > With `es6` you can import one or more of the functions directly - `import { fun, fun2 } from 'line-intersection'`
 
 And use the functions: `$.function(params)`
 
 > If you want you can replace `$` with any var name
+
+* In normal project
+Paste this script tag into the HEAD:
+```
+<script type="text/javascript" src="https://rsg-group.github.io/intersection/scripts/index.js"></script>
+```
+After that you just have to use the functions in your code.
 
 ## Functions:
 * *findIntersection* <br/>
