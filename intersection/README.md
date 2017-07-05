@@ -20,7 +20,7 @@ And use the functions: `$.function(params)`
 * In normal project
 Paste this script tag into the HEAD:
 ```
-<script type="text/javascript" src="https://rsg-group.github.io/intersection/scripts/index.js"></script>
+<script type="text/javascript" src="https://rsg-group.github.io/intersection/scripts/intersection.js"></script>
 ```
 After that you just have to use the functions in your code.
 
