@@ -35,7 +35,7 @@ The objects are points of the lines. There are 4 Objects for every point. In one
 * *findSegmentIntersection* <br/>
 This function finds the intersection of two segements of lines. </br>
 *Input*: __Same as *findIntersection* function__ - array with 4 objects inside with parametars "x" and "y" <br/>
-*Output:* Object with "x" and "y" __OR__ "null" - The function returns null when the segments aren't crossed.
+*Output:* Object with "x" and "y" __OR__ "false" - The function returns false when the segments aren't crossed.
 
 * *isSegmentIntersected* <br/>
 This function check for intersection of two segments. </br>
