@@ -13,19 +13,19 @@ function findIntersection(array) {
 }
 
 function isPointBetween(p, a, b) {
-  return a.x <= p.x && p.x <= b.x && (a.y <= p.y && p.y <= b.y);
+  return ((a.x <= p.x && p.x <= b.x) || (a.x >= p.x && p.x >= b.x)) && ((a.y <= p.y && p.y <= b.y) || (a.y >= p.y && p.y >= b.y));
 }
 
 function findSegmentIntersection(points) {
   var i1 = findIntersection(points);
   var P1 = points[0], P2 = points[1], P3 = points[2], P4 = points[3];
-  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4) ? i1 : false;
+  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
 }
 
 function isSegmentIntersected(points) {
   var i1 = findIntersection(points);
   var P1 = points[0], P2 = points[1], P3 = points[2], P4 = points[3];
-  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4) ? true : false;
+  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
 }
 
 window.findIntersection = findIntersection;

@@ -11,19 +11,19 @@ function findIntersection([P1, P2, P3, P4]) {
 }
 
 function isPointBetween(p, a, b) {
-  return a.x <= p.x && p.x <= b.x && (a.y <= p.y && p.y <= b.y);
+  return ((a.x <= p.x && p.x <= b.x) || (a.x >= p.x && p.x >= b.x)) && ((a.y <= p.y && p.y <= b.y) || (a.y >= p.y && p.y >= b.y));
 }
 
 function findSegmentIntersection(points) {
   const i1 = findIntersection(points);
   const [P1, P2, P3, P4] = points;
-  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4) ? i1 : false;
+  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
 }
 
 function isSegmentIntersected(points) {
   const i1 = findIntersection(points);
   const [P1, P2, P3, P4] = points;
-  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4) ? true : false;
+  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
 }
 
 exports.findIntersection = findIntersection;
