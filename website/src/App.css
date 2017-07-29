@@ -1,0 +1,52 @@
+.texts {
+  margin-left: 15px;
+  font-family: Roboto, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: normal;
+}
+
+.app {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+
+  color: rgb(50, 60, 50);
+  text-decoration: none;
+
+  padding: 5px 3px 5px 7px;
+  margin: 20px 0px 1px 15px; 
+  border: 1px dashed black;
+  background: radial-gradient(73% 73%, rgba(117, 255, 190, 0.75), white);
+  /*alternative:*/  /*background: linear-gradient(to top, white, rgba(117, 255, 190, 0.75));*/
+
+  transition: all 0.5s ease-in;
+}
+
+.app:hover{
+  border-radius: 10px;
+  background: rgba(117, 255, 190, 0.75);
+}
+
+#sideBar{
+  background: rgb(63, 81, 181);
+  box-shadow: 0px 3px 5px grey;
+  color: white;
+
+  padding: 23px;
+  margin: 0;
+
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+#sideBar .barContent {
+  position: relative;
+  left: 90%;
+}
