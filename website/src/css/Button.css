@@ -1,0 +1,17 @@
+.button{
+	width: 24px;
+	height: 24px;
+
+	transition: all .5s ease-in;
+}
+
+.button:hover{
+	border-radius: 5%;
+	background: rgb(105, 123, 215);
+}
+
+.button:active{
+	transition: all .075s linear;
+	background: rgb(175, 190, 255);
+	border-radius: 60%;
+}

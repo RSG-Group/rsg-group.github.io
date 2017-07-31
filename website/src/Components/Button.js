@@ -1,9 +1,10 @@
 import React from 'react';
+import './../css/Button.css';
 
 export default class extends React.Component{
 	render(){
 		return(
-			<span>{this.props.children}</span>
+			<div className="button">{this.props.children}</div>
 		)
 	}
 }

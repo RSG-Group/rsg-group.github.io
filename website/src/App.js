@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Components/Button';
 import GitHubLogo from './Components/GitHubLogo';
-import './App.css';
+import './css/App.css';
 
 class App extends Component {
   render() {
