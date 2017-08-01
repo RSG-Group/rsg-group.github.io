@@ -1,8 +1,13 @@
 .button{
-	width: 24px;
-	height: 24px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	padding: 1px;
 
-	transition: all .5s ease-in;
+	background-clip: padding-box;
+	cursor: pointer;
+
+	transition: all .2s ease-in;
 }
 
 .button:hover{
@@ -13,5 +18,5 @@
 .button:active{
 	transition: all .075s linear;
 	background: rgb(175, 190, 255);
-	border-radius: 60%;
+	border-radius: 50%;
 }

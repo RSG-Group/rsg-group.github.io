@@ -7,12 +7,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 id="sideBar">
+        <div id="sideBar">
           RSG-Group
           <span className="barContent">
-            <Button><GitHubLogo/></Button>
+            <Button style={{"margin-top": "2px"}}>Fork Me</Button>
+            <Button style={{"width": "24px", height: "24px"}}>
+              <GitHubLogo/>
+            </Button>
           </span>
-        </h1>
+        </div>
 
         <a href="https://www.npmjs.com/package/rsg-components">
           <div className="app texts">
