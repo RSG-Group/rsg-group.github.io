@@ -31,6 +31,24 @@ class App extends Component {
           </div>
         </a>
 
+        <a href="https://github.com/RSG-Group/hyper-background">
+          <div className="app texts">
+            <b>hyper-background</b> - Change the background of your Hyper terminal (proof of concept).
+          </div>
+        </a>
+
+        <a href="https://github.com/RSG-Group/Chess">
+          <div className="app texts">
+            <b>Chess</b> - Cool chess game
+          </div>
+        </a>
+
+        <a href="https://github.com/RSG-Group/website">
+          <div className="app texts">
+            <b>website</b> - (Un)official RSG-Group website built in Material Design, Next.js, Express & more.
+          </div>
+        </a>
+
       </div>
     );
   }
