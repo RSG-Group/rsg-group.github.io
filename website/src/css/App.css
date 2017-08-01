@@ -25,7 +25,7 @@
 
 .app:hover{
   border-radius: 10px;
-  background: rgba(115, 255, 190, 0.75);
+  background: rgba(115, 255, 190, 0.5);
 }
 
 #sideBar{

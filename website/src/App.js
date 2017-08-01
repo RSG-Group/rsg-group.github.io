@@ -10,8 +10,10 @@ class App extends Component {
         <div id="sideBar">
           RSG-Group
           <span className="barContent">
-            <Button style={{"margin-top": "2px"}}>Fork Me</Button>
-            <Button style={{"width": "24px", height: "24px"}}>
+            <Button redirect="https://github.com/RSG-Group/rsg-group.github.io">Fork Me</Button>
+            <Button
+              redirect="https://github.com/RSG-Group"
+              style={{"width": "24px", height: "24px", "padding": "0px"}}>
               <GitHubLogo/>
             </Button>
           </span>
