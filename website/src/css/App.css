@@ -20,12 +20,17 @@
   background: radial-gradient(73% 73%, rgba(115, 255, 190, 0.75), white);
   /*alternative:*/  /*background: linear-gradient(to top, white, rgba(115, 255, 190, 0.75));*/
 
-  transition: all 0.5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .app:hover{
   border-radius: 10px;
   background: rgba(115, 255, 190, 0.5);
+}
+
+.app:active{
+  transition: color .1s ease-in;
+  color: blue;
 }
 
 #sideBar{

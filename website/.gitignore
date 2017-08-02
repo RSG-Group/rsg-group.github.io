@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# We're using GitHub Pages and need the production
 
 # misc
 .DS_Store

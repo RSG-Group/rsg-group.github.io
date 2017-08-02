@@ -19,33 +19,33 @@ class App extends Component {
           </span>
         </div>
 
-        <a href="https://www.npmjs.com/package/rsg-components">
-          <div className="app texts">
-            <b>rsg-components</b> - Some React components with beautiful styling
-          </div>
-        </a>
-
         <a href="https://www.npmjs.com/package/line-intersection">
           <div className="app texts">
             <b>line-intersection</b> - Simple mini library for finding line and line-segment intersection
           </div>
         </a>
 
+        <a href="https://github.com/RSG-Group/website">
+          <div className="app texts">
+            <b>website</b> - (Un)official RSG-Group website built in Material Design, Next.js, Express & more.
+          </div>
+        </a>
+        
         <a href="https://github.com/RSG-Group/hyper-background">
           <div className="app texts">
             <b>hyper-background</b> - Change the background of your Hyper terminal (proof of concept).
+          </div>
+        </a>
+        
+        <a href="https://www.npmjs.com/package/rsg-components">
+          <div className="app texts">
+            <b>rsg-components</b> - Some React components with beautiful styling
           </div>
         </a>
 
         <a href="https://github.com/RSG-Group/Chess">
           <div className="app texts">
             <b>Chess</b> - Cool chess game
-          </div>
-        </a>
-
-        <a href="https://github.com/RSG-Group/website">
-          <div className="app texts">
-            <b>website</b> - (Un)official RSG-Group website built in Material Design, Next.js, Express & more.
           </div>
         </a>
 
