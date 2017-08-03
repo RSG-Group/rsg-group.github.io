@@ -86,6 +86,5 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "homepage": "http://rsg-group.github.io/"
+  }
 }
