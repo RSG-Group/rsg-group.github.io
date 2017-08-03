@@ -127,6 +127,15 @@ function build(previousFileSizes) {
         );
         return reject(new Error(messages.warnings.join('\n\n')));
       }
+
+      fs.rename(paths.appBuild + '/index.html', './../index.html', () => {
+        console.log(
+          chalk.green(" The built index.html file moved to"),
+          chalk.yellow("`rsg-group.github.io/`"),
+          chalk.blue("!!!")
+        );
+      });
+
       return resolve({
         stats,
         previousFileSizes,
