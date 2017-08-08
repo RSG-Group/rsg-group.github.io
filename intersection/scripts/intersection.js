@@ -19,7 +19,8 @@ function isPointBetween(p, a, b) {
 function findSegmentIntersection(points) {
   var i1 = findIntersection(points);
   var P1 = points[0], P2 = points[1], P3 = points[2], P4 = points[3];
-  return isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
+  const isIntersected = isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
+  return isIntersected ? isIntersected : false;
 }
 
 function isSegmentIntersected(points) {
