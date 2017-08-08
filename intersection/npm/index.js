@@ -18,7 +18,7 @@ function findSegmentIntersection(points) {
   const i1 = findIntersection(points);
   const [P1, P2, P3, P4] = points;
   const isIntersected = isPointBetween(i1, P1, P2) && isPointBetween(i1, P3, P4);
-  return isIntersected ? isIntersected : false;
+  return isIntersected ? i1 : false;
 }
 
 function isSegmentIntersected(points) {
