@@ -49,6 +49,12 @@ class App extends Component {
           </div>
         </a>
 
+        <a href="https://build.phonegap.com/apps/2773889/builds">
+          <div className="app texts">
+            <b>Chess mobile</b> - The mobile version of RSG-Chess built with <b>PhoneGap</b>
+          </div>
+        </a>
+
       </div>
     );
   }
