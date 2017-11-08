@@ -35,7 +35,7 @@ import { findIntersection, isPointBetween } from 'line-intersection'
 Paste this script tag into the head of your HTML document:
 
 ```html
-<script src="https://rsg-group.github.io/extras/intersection/scripts/intersection.js" />
+<script src="https://rsg-group.github.io/intersection/scripts/intersection.js" />
 ```
 
 After that, the functions can be directly called in your environment.
