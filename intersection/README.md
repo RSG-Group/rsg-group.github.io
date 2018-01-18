@@ -1,60 +1,77 @@
-# Simple mini library for finding line and line segment intersection
-## How to use?
-* With Node
+# line-intersection
+
+A simple library which finds the intersection of two lines or line segments.
+
+## Installation
+
+### Via npm
+
+For Node.js, Webpack and other such environments where support for npm modules exists, you may install the npm package via Yarn or npm.
+
+```bash
+# For npm 1 to 4.
+npm i line-intersection --save
+# For npm 5.
+npm i line-intersection
+# For Yarn (recommended).
+yarn add line-intersection
 ```
-npm install line-intersection --save
+
+Then import it in your environment.
+
+```javascript
+// For non-ES Module environments.
+const $ = require('line-intersection')
+// For ES Module environments.
+import $ from 'line-intersection'
+// Note, you can also import specific functions via ES Modules like this.
+import { findIntersection, isPointBetween } from 'line-intersection'
 ```
-In your js file:
+
+**You can replace $ with any variable name.**
+
+### Using a CDN (for browser projects without a module bundler)
+
+Paste this script tag into the head of your HTML document:
+
+```html
+<script src="https://rsg-group.github.io/intersection/scripts/intersection.js" />
 ```
-var $ = require('line-intersection');
-```
-If you use es6: `import * as $ from 'line-intersection'`
 
-> With `es6` you can import one or more of the functions directly - `import { fun, fun2 } from 'line-intersection'`
+After that, the functions can be directly called in your environment.
 
-And use the functions: `$.function(params)`
+## Functions
 
-> If you want you can replace `$` with any var name
+> Note: We will refer to this type - `[{ x: number, y: number }, { x: number, y: number }, { x: number, y: number }, { x: number, y: number }]` - as `CoordsOfTwoLines`. We will also refer to - `{ x: number, y: number }` - as `Coords`.
 
-* In normal project
-Paste this script tag into the HEAD:
-```
-<script type="text/javascript" src="https://rsg-group.github.io/intersection/scripts/intersection.js"></script>
-```
-After that you just have to use the functions in your code.
+- `findIntersection(CoordsOfTwoLines) -> { x: number, y: number }`
 
-## Functions:
-* *findIntersection* 
+1. **Description:** This function finds the intersection of two lines.
 
-This function finds the intersection of two lines.
+1. **Input:** It requires a unit an array of 4 objects, the 1st being the coordinates of a point on line A, the 2nd being coordinates of a 2nd point on line A, and the 3rd and 4th being coordinates of two different points on line B.
 
-*Input*: array with 4 objects inside with parametars "x" and "y"
+1. **Output:** It returns the coordinates of the point where the lines intersect.
 
-`[{x: val, y: val}, {x: val, y: val}, {x: val, y: val}, {x: val, y: val}]`
-The objects are points of the lines. There are 4 Objects for every point. In one line there are 2 points. We searching the intersection of two lines - `2 lines * 2 points = 4 objects`
+- `findSegmentIntersection(CoordsOfTwoLines) -> { x: number, y: number } | false`
 
-*Output:* Object with "x" and "y" - the coords of the intersection point.
+1. **Description:** This function finds the intersection of two line segments.
 
-* *findSegmentIntersection*
+1. **Input:** It requires a unit an array of 4 objects, the 1st being the coordinates of a point on line A, the 2nd being coordinates of a 2nd point on line A, and the 3rd and 4th being coordinates of two different points on line B.
 
-This function finds the intersection of two segements of lines.
+1. **Output:** It returns either the point where the line segments intersect or `false` if they do not intersect.
 
-*Input*: __Same as *findIntersection* function__ - array with 4 objects inside with parametars "x" and "y"
+- `isSegmentIntersected(CoordsOfTwoLines) -> boolean`
 
-*Output:* Object with "x" and "y" __OR__ "false" - The function returns false when the segments aren't crossed.
+1. **Description:** This function finds out if two line segments intersect or not.
 
-* *isSegmentIntersected*
+1. **Input:** It requires a unit an array of 4 objects, the 1st being the coordinates of a point on line A, the 2nd being coordinates of a 2nd point on line A, and the 3rd and 4th being coordinates of two different points on line B.
 
-This function check for intersection of two segments.
+1. **Output:** It returns `true` if the line segments intersect or `false` if they do not intersect.
 
-*Input*: __Same as *findSegmentIntersection* function__ - array with 4 objects inside with parametars "x" and "y"
+- `isPointBetween(p: Coords, a: Coords, b: Coords) -> boolean`
 
-*Output:* boolean - The function returns "true" when the line segments are crossed and "false" when they aren't.
+1. **Description:** It checks if the given point `p` is between given points `x` and `y`.
 
-* *isPointBetween*
+1. **Input:** It requires an input `p` which is the point to check, and the coordinates of `a` and `b`, the points between which `p` should or should not situate.
 
-Check is the point "p" is between "a" and "b"
-
-*Input:* three points (Objects with "x" and "y"). The point "p" must be first `isPointBetween(p, a, b)`
-
-*Output:* boolean
+1. **Output:** It returns `true` if the point `p` is between `a` and `b` or `false` if not.
