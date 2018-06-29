@@ -2,6 +2,15 @@
 
 A simple library which finds the intersection of two lines or line segments.
 
+## The `line-intersection` library is boved to [`radi-cho/line-ntersection`](https://github.com/radi-cho/line-intersection)
+
+The usage remains the same. The npm module also won't be changed. There are new CDNs:
+```
+https://storage.googleapis.com/line-intersection-main-scripts/intersection.js
+```
+
+The old scripts and CDNs will be kept up to September 2019 to give any users time to migrate!
+
 ## Installation
 
 ### Via npm
@@ -35,7 +44,7 @@ import { findIntersection, isPointBetween } from 'line-intersection'
 Paste this script tag into the head of your HTML document:
 
 ```html
-<script src="https://rsg-group.github.io/intersection/scripts/intersection.js" />
+<script src="https://storage.googleapis.com/line-intersection-main-scripts/intersection.js" />
 ```
 
 After that, the functions can be directly called in your environment.
