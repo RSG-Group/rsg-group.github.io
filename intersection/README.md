@@ -9,7 +9,7 @@ The usage remains the same. The npm module also won't be changed. There are new 
 https://storage.googleapis.com/line-intersection-main-scripts/intersection.js
 ```
 
-The old scripts and CDNs will be kept up to September 2019 to give any users time to migrate!
+The old scripts and CDNs will be kept up to September 2018 to give any users time to migrate!
 
 ## Installation
 
