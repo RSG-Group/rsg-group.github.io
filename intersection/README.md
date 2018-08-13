@@ -2,7 +2,7 @@
 
 A simple library which finds the intersection of two lines or line segments.
 
-## The `line-intersection` library is boved to [`radi-cho/line-ntersection`](https://github.com/radi-cho/line-intersection)
+## The `line-intersection` library is moved to [`radi-cho/line-ntersection`](https://github.com/radi-cho/line-intersection)
 
 The usage remains the same. The npm module also won't be changed. There are new CDNs:
 ```
